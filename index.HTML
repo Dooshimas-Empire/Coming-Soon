@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dooshima's Empire – Coming Soon</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background: linear-gradient(135deg, #0A3D62, #F0E5CF, #FFFFFF);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      color: #fff;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+    }
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    .logo {
+      font-size: 3rem;
+      font-weight: bold;
+      color: gold;
+      animation: fadeIn 2s ease forwards;
+    }
+    .tagline {
+      font-size: 1.5rem;
+      color: #fff;
+      margin-top: 1rem;
+      animation: fadeIn 3s ease forwards;
+    }
+    .notify-btn {
+      margin-top: 2rem;
+      padding: 12px 25px;
+      background: gold;
+      color: #0A3D62;
+      border: none;
+      border-radius: 50px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      animation: fadeIn 4s ease forwards;
+      transition: transform 0.3s;
+    }
+    .notify-btn:hover {
+      transform: scale(1.05);
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="logo">Dooshima's Empire</div>
+  <div class="tagline">Your Vision, Our Signature</div>
+  <button class="notify-btn" onclick="alert('Thank you! You will be notified.')">
+    Notify Me
+  </button>
+</body>
+</html>
